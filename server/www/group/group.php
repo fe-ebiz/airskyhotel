@@ -310,7 +310,7 @@
                                     <figure>
                                         <span class="s-bg"></span>
                                         <img src="<?=base_img?>/svc/img/group/tour/etc_03.jpg" alt="주변관광지사진">
-                                        <figcaption>구읍뱃터<br><span class="f-sm">차량 5분<span class="hidden-smxs"> 소요 (1.5km 거리)</span></span></figcaption>
+                                        <figcaption>구읍뱃터<br><span class="f-sm">도보 2분<span class="hidden-smxs"> 소요 (200m 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item nth-m2">
