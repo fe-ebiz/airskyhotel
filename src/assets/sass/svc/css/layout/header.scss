@@ -268,7 +268,7 @@ figure>img {
             }
 
             .logo-box {
-                width: 530px;
+                width: 520px;
                 padding-left: 10px;
 
                 >h1 {
@@ -291,6 +291,9 @@ figure>img {
                         @include dp;
                         font-size: 17px;
 
+                        &:nth-last-of-type(1){
+                            // display: none;
+                        }
                         >a {
                             display: inline-block;
                             color: inherit;

@@ -158,6 +158,9 @@
                             <li>
                                 <a href="/event" class="title">이벤트/축제</a>
                             </li>
+                            <li>
+                                <a href="/tourist" class="title">주변관광지</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

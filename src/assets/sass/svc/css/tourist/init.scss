@@ -143,16 +143,26 @@ hr {
     }
     /*주변 광관지*/
     .tourist-sec {
+
         margin: 0 auto;
         width: 95%;
         padding-bottom: 6px;
+
+        .h3-1 {
+            font-size: 18px;
+        }
+
+        .h3-2 {
+            font-size: 18px;
+        }
+
         .ul-list {
             .li-item {
                 width: 49%;
 
                 figure {
                      >figcaption {
-                        font-size: 12px;
+                        font-size: 14px;
                      }
                 }
             }
