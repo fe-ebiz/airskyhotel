@@ -341,7 +341,7 @@
                     <div class="facil-wrap surroundings-wrap">
                         <ul class="rooms-list">
                             <li class="rooms-item">
-                                <a href="javascript:;" class="link">
+                                <a href="/tourist/index.php" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_01.jpg" alt=""></figure>
                                     </div>
@@ -352,7 +352,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="javascript:;" class="link">
+                                <a href="/tourist/index.php" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_02.jpg" alt=""></figure>
                                     </div>
@@ -363,7 +363,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="javascript:;" class="link">
+                                <a href="/tourist/index.php" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_03.jpg" alt=""></figure>
                                     </div>
@@ -374,7 +374,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="javascript:;" class="link">
+                                <a href="/tourist/index.php" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_04.jpg" alt=""></figure>
                                     </div>
