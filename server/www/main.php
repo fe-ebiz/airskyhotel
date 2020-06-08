@@ -151,7 +151,7 @@
                                 <span class="c-theme fw-b">AIRSKY TOPIC</span>
                                 <span class="hidden-smxs c-black">
                                     <img src="<?=base_img?>/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
-                                    <span class="sm">따뜻한 하늘과 드넓은 오션뷰, 수려한 주변경관을 만나보세요.</span>
+                                    <span class="sm">인천 영종도의 드넓은 오션뷰, 수려한 경관을 만나보세요.</span>
                                 </span>
                                 <div class="ico-plus-cont theme">
                                     <div class="ico-wrap">
@@ -170,7 +170,7 @@
                         <div class="title hidden-mdlg">
                             <a href="#none" class="nope c-theme">
                                 <img src="<?=base_img?>/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
-                                <span class="sm">매일 아침을 아름다운 동해의 일출로 시작하세요.</span>
+                                <span class="sm">인천 영종도의 드넓은 오션뷰, 수려한 경관을 만나보세요.</span>
                             </a>
                         </div>
                         <div class="bx-box">
