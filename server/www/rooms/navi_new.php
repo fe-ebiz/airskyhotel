@@ -17,7 +17,7 @@ switch($_GET["r"]) {
         $p_stitle = "오크 질감의 바닥과 따뜻한 느낌으로 장식 된 객실은 편안함과 안락함을 제공하기 위해 최상의 컨디션을 유지합니다.<br>편안한 개인용 싱글배드와 드넓은 바다 전망으로 특별한 하루를 보내세요.";
     break;
     case "dx_oc_ondol":
-        $p_title  = "디럭스 오션 온돌";
+        $p_title  = "프리미어 오션 온돌";
         $p_stitle = "따뜻한 느낌으로 장식 된 한실 객실로 온돌 타입을 선호하는 여행객 분들께 권합니다.<br>공간 활용에 좋은 한실 타입 객실과 드넓은 바다 전망으로 특별한 하루를 보내세요.";
     break;
     case "pr_oc_db":
@@ -46,7 +46,7 @@ switch($_GET["r"]) {
         <li class="menu_item <?php if($_GET["r"] == "std_tw") echo "active"; ?>"><a href="./?r=std_tw">스탠다드 트윈</a></li>
         <li class="menu_item <?php if($_GET["r"] == "dx_oc_db") echo "active"; ?>"><a href="./?r=dx_oc_db">디럭스 오션 더블</a></li>
         <li class="menu_item <?php if($_GET["r"] == "dx_oc_tw") echo "active"; ?>"><a href="./?r=dx_oc_tw">디럭스 오션 트윈</a></li>
-        <li class="menu_item <?php if($_GET["r"] == "dx_oc_ondol") echo "active"; ?>"><a href="./?r=dx_oc_ondol">디럭스 오션 온돌</a></li>
+        <li class="menu_item <?php if($_GET["r"] == "dx_oc_ondol") echo "active"; ?>"><a href="./?r=dx_oc_ondol">프리미어 오션 온돌</a></li>
         <li class="menu_item <?php if($_GET["r"] == "pr_oc_db") echo "active"; ?>"><a href="./?r=pr_oc_db">프리미어 오션 더블</a></li>
     </ul>
     <ul class="menu_wrap container">

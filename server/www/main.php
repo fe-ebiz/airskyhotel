@@ -242,7 +242,7 @@
                                     <span class="lg">디럭스룸</span>
                                     <span class="sm c-gray">DELUXE</span>
                                     <div class="desc">
-                                        실용적이면서도 안락하고 편안한 공간<br class="hidden-mdlg"> - 트윈 / 더블 / 온돌
+                                        실용적이면서도 안락하고 편안한 공간<br class="hidden-mdlg"> - 트윈 / 더블
                                     </div>
                                 </div>
                             </a>
@@ -256,7 +256,7 @@
                                     <span class="lg">프리미어룸</span>
                                     <span class="sm c-gray">PREMIER</span>
                                     <div class="desc">
-                                        인테리어 조화를 이루는 프리미엄<br class="hidden-mdlg"> - 트윈 / 더블 / 패밀리
+                                        인테리어 조화를 이루는 프리미엄<br class="hidden-mdlg"> - 트윈 / 더블 / 패밀리 / 온돌
                                     </div>
                                 </div>
                             </a>
