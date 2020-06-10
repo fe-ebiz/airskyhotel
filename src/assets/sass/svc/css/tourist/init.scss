@@ -54,61 +54,74 @@ hr {
 .tourist-sec {
     position: relative;
     padding-bottom: 40px;
-    .ferry-guide{
-        display: flex;
-
-        flex-wrap: wrap;
+    /*인트로*/
+    .intro-ul{
         margin-top: 20px;
-        margin-bottom: 32px;
-        background-color: #e6f8ff;
-        >*{
-            width: 50%;
-        }
-        .ferry-img-box{
-            img{
-                width: 100%;
-                padding-right: 10px;
-            }
-        }
-        .ferry-contents{
-            padding-top: 38px;
-            padding-left: 24px;
-            .feerry-title-box{
-                p{
-                    word-break: keep-all;
+        padding-bottom: 20px;
+        width: 100%;
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            background-color: #e6f8ff;
+            .img-box{
+                width: 48.75%;
+                img{
+                    width: 100%;
+                    // padding-right: 10px;
                 }
-                .p-sub{
-                    letter-spacing: -1px;
-                    color: #7a2fc0;
-                    font-size: 16px;
-                    .span-hot{
-                        color: white;
-                        background-color: #7a2fc0;
-                        padding: 1px 3px;
-                        letter-spacing: 0;
-                        margin-right: 2px;
+            }
+            .txt-contents{
+                width: 51.25%;
+                padding-top: 38px;
+                padding-left: 24px;
+                .title-box{
+                    p{
+                        word-break: keep-all;
+                    }
+                    .p-sub{
+                        letter-spacing: -1px;
+                        color: #7a2fc0;
+                        font-size: 16px;
+                        .span-hot{
+                            color: white;
+                            background-color: #7a2fc0;
+                            padding: 1px 3px;
+                            letter-spacing: 0;
+                            margin-right: 2px;
+                        }
+                    }
+                    .p-title{
+                        letter-spacing: -1px;
+                        color: #0059bd;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 12px;
+                        margin-bottom: 16px;
                     }
                 }
-                .p-title{
-                    letter-spacing: -1px;
-                    color: #0059bd;
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin-top: 12px;
-                    margin-bottom: 16px;
+                .txt-box{
+                    p{
+                        font-size: 15px;
+                        margin-bottom: 1px;
+                        letter-spacing: -1px;
+                        word-break: keep-all;
+                    }
                 }
             }
-            .ferry-txt-box{
-                p{
-                    font-size: 15px;
-                    margin-bottom: 1px;
-                    letter-spacing: -1px;
-                    word-break: keep-all;
-                }
+            /*이미지 오른쪽으로*/
+            &:nth-of-type(even){
+                .img-box{
+                    order: 2;
+                    // img{
+                    //     padding-right: 0;
+                    // }
+                }    
             }
-        }
 
+        }
     }
+    //인트로 마지막
 
     .h3-1 {
         font-size: 25px;
@@ -147,7 +160,6 @@ hr {
                 >img {
                     width: 100%;
                 }
-
                 >figcaption {
                     display: block;
                     width: 100%;
@@ -178,33 +190,29 @@ hr {
 
 @media (max-width: 1199px) {
     .tourist-sec {
-        .ferry-guide{
-            >*{
-                width: 50%;
-            }
-            .ferry-img-box{
-            }
-            .ferry-contents{
-                padding-top: 15px;
-                padding-left: 4px;
-                .feerry-title-box{
-                    .p-sub{
-                        font-size: 14px;
+        .intro-ul{
+            li{
+                .txt-contents{
+                    padding-top: 15px;
+                    padding-left: 14px;
+                    .title-box{
+                        .p-sub{
+                            font-size: 14px;
+                        }
+                        .p-title{
+                            font-size: 17px;
+                            font-weight: 600;
+                            margin-top: 10px;
+                            margin-bottom: 14px;
+                        }
                     }
-                    .p-title{
-                        font-size: 17px;
-                        font-weight: 600;
-                        margin-top: 10px;
-                        margin-bottom: 14px;
-                    }
-                }
-                .ferry-txt-box{
-                    p{
-                        font-size: 14px;
+                    .txt-box{
+                        p{
+                            font-size: 14px;
+                        }
                     }
                 }
             }
-    
         }
     }
 }
@@ -235,33 +243,32 @@ hr {
         margin: 0 auto;
         width: 95%;
         padding-bottom: 6px;
-        .ferry-guide{
+        .intro-ul{
             margin-top: 0;
-            >*{
-                width: 100%;
-            }
-            .ferry-img-box{
-                img{
-                    padding:0;
+            li{
+                // margin-top: 0;
+                .img-box{
+                    width: 100%;
                 }
-            }
-            .ferry-contents{
-                padding-top: 20px;
-                padding-left: 12px;
-                padding-bottom: 16px;;
-                order: -1;
-                .feerry-title-box{
-                    .p-sub{
-                        font-size: 14px;
+                .txt-contents{
+                    width: 100%;
+                    padding-top: 20px;
+                    padding-left: 12px;
+                    padding-bottom: 16px;;
+                    order: -1;
+                    .title-box{
+                        .p-sub{
+                            font-size: 14px;
+                        }
+                        .p-title{
+                            font-size: 16px;
+                            // font-weight: 500;
+                        }
                     }
-                    .p-title{
-                        font-size: 16px;
-                        // font-weight: 500;
-                    }
-                }
-                .ferry-txt-box{
-                    p{
-                        font-size: 14px;
+                    .txt-box{
+                        p{
+                            font-size: 14px;
+                        }
                     }
                 }
             }
