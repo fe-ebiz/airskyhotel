@@ -48,8 +48,8 @@
                                     </figure>
                                     <div class="d-row-1">
                                         <div class="s-name">
-                                            스탠다드 더블 / 트윈(22.8㎡)
-                                            <p class="d-row">※ 기준인원 2인 / 최대인원 2인</p>
+                                            슈페리어 더블 (22.8㎡)
+                                            <p class="d-row">※ 기준인원 1인 / 최대인원 1인</p>
                                         </div>
                                         <a href="/rooms/?r=std_db" class="a-btn">자세히 보기</a>
                                     </div>
@@ -58,8 +58,8 @@
                                     <figure><img src="<?=base_img?>/svc/img/group/room_02.jpg" alt="디럭스 온돌">
                                     </figure>
                                     <div class="d-row-1">
-                                        <div class="s-name">디럭스 오션 더블 / 트윈(22.8㎡)
-                                            <p class="d-row">※ 기준인원 2인 / 최대인원 2인</p>
+                                        <div class="s-name">디럭스 오션 더블 / 트윈 / 한실(22.8㎡)
+                                            <p class="d-row">※ 기준인원 2인 / 최대인원 4인(한실)</p>
                                         </div>
                                         <a href="/rooms/?r=dx_oc_db" class="a-btn">자세히 보기</a>
                                     </div>
@@ -70,7 +70,7 @@
                                     <div class="d-row-1">
                                         <div class="s-name">
                                             프리미어 오션 더블/ 트윈/ 패밀리/ 온돌(22.8㎡)
-                                            <p class="d-row">※ 기준인원 2인 / 최대인원 3인(패밀리)</p>
+                                            <p class="d-row">※ 기준인원 2인 / 최대인원 4인(온돌)</p>
                                         </div>
                                         <a href="/rooms/?r=pr_oc_db" class="a-btn">자세히 보기</a>
                                     </div>

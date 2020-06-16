@@ -225,10 +225,10 @@
                                     <figure><img src="<?=base_img?>/svc/img/main/room_01.jpg" alt="스탠다드룸"></figure>
                                 </div>
                                 <div class="title cf">
-                                    <span class="lg">스탠다드룸</span>
-                                    <span class="sm c-gray">STANDARD</span>
+                                    <span class="lg">슈페리어룸</span>
+                                    <span class="sm c-gray">SUPERIOR</span>
                                     <div class="desc">
-                                        합리적이면서 아늑한 휴식 공간<br class="hidden-mdlg"> - 더블 / 트윈
+                                        합리적이면서 아늑한 휴식 공간<br class="hidden-mdlg"> - 더블
                                     </div>
                                 </div>
                             </a>
@@ -242,7 +242,7 @@
                                     <span class="lg">디럭스룸</span>
                                     <span class="sm c-gray">DELUXE</span>
                                     <div class="desc">
-                                        실용적이면서도 안락하고 편안한 공간<br class="hidden-mdlg"> - 트윈 / 더블
+                                        실용적이면서도 안락하고 편안한 공간<br class="hidden-mdlg"> - 트윈 / 더블 / 한실
                                     </div>
                                 </div>
                             </a>

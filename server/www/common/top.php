@@ -128,13 +128,14 @@
                                 <a href="#none" class="title">객실안내</a>
                                 <!-- 190719 메뉴 수정 -->
                                 <ul class="sub">
-                                    <li><a href="/rooms/?r=std_db">스탠다드 더블</a></li>
-                                    <li><a href="/rooms/?r=std_tw">스탠다드 트윈</a></li>
+                                    <li><a href="/rooms/?r=std_db">슈페리어 더블</a></li>
+                                    <!-- <li><a href="/rooms/?r=std_tw">스탠다드 트윈</a></li> -->
                                     <li><a href="/rooms/?r=dx_oc_db">디럭스 오션 더블</a></li>
                                     <li><a href="/rooms/?r=dx_oc_tw">디럭스 오션 트윈</a></li>
-                                    <li><a href="/rooms/?r=dx_oc_ondol">디럭스 오션 온돌</a></li>
+                                    <li><a href="/rooms/?r=dx_oc_ondol">디럭스 오션 한실</a></li>
                                     <li><a href="/rooms/?r=pr_oc_db">프리미어 오션 더블</a></li>
                                     <li><a href="/rooms/?r=pr_oc_tw">프리미어 오션 트윈</a></li>
+                                    <li><a href="/rooms/?r=pr_oc_ondol">프리미어 오션 온돌</a></li>
                                     <li><a href="/rooms/?r=pr_oc_famtw">프리미어 오션 패밀리 트윈</a></li>
                                     <li><a href="/rooms/?r=suite">스위트</a></li>
                                 </ul>
