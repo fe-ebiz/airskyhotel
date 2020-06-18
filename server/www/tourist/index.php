@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="txt-contents">
                                         <div class="title-box">
-                                            <p class="p-sub"><span class="span-hot">HOT</span> 바지락, 게, 꼬막, 조개, 낚지, 쭈꾸미 등 영종도 전체가 어항</p>
+                                            <p class="p-sub"><span class="span-hot">HOT</span> 바지락, 게, 꼬막, 조개, 낙지, 쭈꾸미 등 영종도 전체가 어항</p>
                                             <p class="p-title">서해만의 자연 액티비티, 자연갯벌체험</p>
                                         </div>
                                         <div class="txt-box">
@@ -74,7 +74,7 @@
                                 </li>
                                 <li class="atv-bike">
                                     <div class="img-box">
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/map_atv.jpg" alt="바이크">
+                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/map_atv.jpg" alt="페리지도">
                                     </div>
                                     <div class="txt-contents">
                                         <div class="title-box">
