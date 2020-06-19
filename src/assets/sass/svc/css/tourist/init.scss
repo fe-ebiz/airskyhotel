@@ -49,11 +49,38 @@ hr {
     margin: 35px auto;
 }
 
+/*서브메뉴*/
+.tourist-sub-menu{
+    margin-bottom: 25px;
+    .sub-menu-ul{
+        justify-content: center;
+        display: flex;;
+        li{
+            background-color: #efefef;
+            width: 228px;
+            a{
+                padding: 10px 0;
+                display: block;
+                text-align: center;
+                color: #2d2d2d;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .active{
+            background-color: #222;
+            a{
+                color: white;
+            }
+        }
+    }
+}
 
 /* 관광지 */
 .tourist-sec {
+    img{width: 100%;}
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     /*인트로*/
     .intro-ul{
         margin-top: 20px;
@@ -62,7 +89,7 @@ hr {
         li{
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
             background-color: #e6f8ff;
             .img-box{
                 width: 48.75%;
@@ -184,7 +211,23 @@ hr {
             }
         }
     }
-
+    .map-guide{
+        .map-main-box{
+            width: 100%;
+            margin-bottom: 1.6%;
+        }
+        .map-sub-ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            &>li{
+                width: 49.2%;
+                margin-bottom: 1.6%;
+            }
+        }
+    }
 
 }
 
@@ -242,7 +285,7 @@ hr {
     .tourist-sec {
         margin: 0 auto;
         width: 95%;
-        padding-bottom: 6px;
+        padding-bottom: 40px;
         .intro-ul{
             margin-top: 0;
             li{
@@ -291,6 +334,14 @@ hr {
                      >figcaption {
                         font-size: 14px;
                      }
+                }
+            }
+        }
+        .map-guide{
+            .map-sub-ul{
+                &>li{
+                    width: 100%;
+                    margin-bottom: 3%;
                 }
             }
         }

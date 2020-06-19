@@ -160,7 +160,13 @@
                                 <a href="/event" class="title">이벤트/축제</a>
                             </li>
                             <li>
-                                <a href="/tourist" class="title">주변관광지</a>
+                                <a href="/tourist/?tour_nearby" class="title">주변관광지</a>
+                            </li>
+                            <li>
+                                <a href="/tourist/?tour_fishing" class="title">낚시포인트</a>
+                            </li>
+                            <li>
+                                <a href="/tourist/?tour_foreshore" class="title">갯벌체험</a>
                             </li>
                         </ul>
                     </div>

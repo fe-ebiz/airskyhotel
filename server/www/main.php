@@ -186,7 +186,7 @@
                 <div class="notice-wrap">
                     <div class="notice-header">
                         <div class="title c-theme fw-b">
-                            <a href="http://seabay.co.kr/brd/lists/notice.php" class="link">
+                            <a href="http://hotelairsky.co.kr/brd/lists/notice.php" class="link">
                                 <span class="c-theme fw-b">NOTICE</span>
                                 <div class="ico-plus-cont theme">
                                     <div class="ico-wrap">
