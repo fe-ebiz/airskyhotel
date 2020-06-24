@@ -202,9 +202,16 @@
                         </div>
                     </div>
                     <div class="notice-body">
-                        <ul class="notice-list">
-                            <!-- <li><a href="brd/view/notice/1550.php">[알림] 객실정비 품질 향상 및 개선 안내</a></li> -->
-                            <li><a href="">[알림] 에어스카이호텔 공식홈페이지 오픈</a></li>
+                        <ul class="notice-list">                            
+                            <?php                       
+                                $qry = "select * from brand_board where p_no = '".p_no."' and btype = 'notice' and state = 'Y' order by num desc";
+                                $res = $go_slave->query($qry);
+                                while($row = $go_slave->fetch($res)) {
+                            ?>
+                            <li><a href="/brd/view/notice/?r=<?=$row["num"];?>"><?=$row["subject"];?></a></li>
+                            <?php
+                                }
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -391,3 +398,23 @@
         </section>
 
     </div>
+
+    <!--팝업(7/3까지 진행)-->
+    <div class="popup-event">
+        <div class="popup-box">
+            <a class="pop-url-pc" target="_blank" href="https://tour.wd.wemakeprice.com/activity/direct/detail/GD200000000077206">
+                <img src="http://img.hotelairsky.co.kr/svc/img/event/wemake_hotprice.png" alt="">
+            </a>
+            <a class="pop-url-mobile" target="_blank" href="https://mtour.wd.wemakeprice.com/activity/direct/detail/GD200000000077206">
+                <img src="http://img.hotelairsky.co.kr/svc/img/event/wemake_hotprice.png" alt="">
+            </a>
+        </div>
+        <div class="btn-pop-close-box">
+            <button class="btn-pop-close" type="button">X</button>
+        </div>
+    </div>
+    <script>
+        $(".btn-pop-close").on('click', function(){
+            $(".popup-event").css("display","none");
+        });
+    </script>
