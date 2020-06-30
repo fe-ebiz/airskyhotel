@@ -46,7 +46,7 @@
                         </ul>
                     </div>
                 </div>
-                <?php include('./description.php'); ?>
+                <?php include('./description_suite.php'); ?>
             </div>
             <!-- /.box_left -->
         </div>
