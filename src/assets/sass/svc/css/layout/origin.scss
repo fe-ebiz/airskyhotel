@@ -7598,6 +7598,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 /*팝업*/
 .popup-event{
+    /*주석처리 대신css로 안보이게*/
+    display:none;
     z-index: 100000;
     position: absolute;
     top:320px;
