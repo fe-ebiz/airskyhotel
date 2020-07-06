@@ -58,6 +58,12 @@
                 <div class="box_left">
                     <!-- <button class="amenity_more tooltip" onclick="amenity_more()" title="더보기"><span>+</span></button> -->
                     @@include('src/template/include/rooms/_amenitys.html')
+                    <div class="event-banner-petroom">
+                        <a href="http://hotelairsky.co.kr/reserve/" target="_blink">
+                            <img class="img-petroom-pc" src="http://img.seabay.co.kr/svc/img/event/petroom_pc.jpg" alt="펫배너_pc">
+                            <img class="img-petroom-mobile" src="http://img.seabay.co.kr/svc/img/event/petroom_m.jpg" alt="펫배너_모바일">
+                        </a>
+                    </div>
                     <div class="description">
                         <div class="title">
                             <h5>ROOM QUICKVIEW</h5>
@@ -72,6 +78,27 @@
                     </div>
 
                     @@include('src/template/include/rooms/_description_amenity.html')
+                    <div class="description">
+                        <div class="title">
+                            <h5>PET ROOM INFO</h5>
+                        </div>
+                        <div class="cont">
+                            <ul class="c_list">
+                                <li>애완동물 동반 객실(펫룸) 예약시 1마리까지 투숙 가능<br>(1마리당 10kg미만 제한)</li>
+                                <li class="dot-no">※ 11시~12시 퇴실시 : 무료이용</li>
+                                <li>입실 전 프론트에 알려주시기 바랍니다.</li>
+                                <li>기본 예방접종을 하지 않은 애완동물은 투숙 불가 </li>
+                                <li class="dot-no">※ 최근 3개월이내 예방접종 확인서 필수 지참</li>
+                                <li>입실 시 프론트에서 애완견 관련 서약서에 동의, 서명 필수</li>
+                                <li class="dot-no">※ 최근 3개월이내 예방접종 완료, 시설 내에서 동물을 안고 다님 등의 서약</li>
+                                <li>이용 시 다음사항을 준수하여 주십시오.</li>
+                                <li class="dot-no">※ 외출 후 입실 시 동물의 발을 닦아주세요.</li>
+                                <li class="dot-no">※ 배설물은 변기에 버리고 패드는 위생팩에 담아 휴지통에 버려주세요.</li>
+                                <li class="dot-no">※ 침구, 비품, 설비 등을 파손 또는 오염시키는 경우 별도 수리비 부과(체크인 시 카드 오픈 또는 현금 보증 요청)</li>
+                                <li>안전을 위해 주차장, 엘리베이터, 로비에서는 동물을 꼭 안거나 하네스를 착용해 주세요.</li>
+                            </ul>
+                        </div>
+                    </div>
                     @@include('src/template/include/rooms/_description.html')
                 </div>
                 <!-- /.box_left -->

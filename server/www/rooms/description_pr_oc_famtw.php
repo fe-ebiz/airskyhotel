@@ -1,5 +1,48 @@
 <div class="description">
     <div class="title">
+        <h5>ROOM FACILITIES</h5>
+    </div>
+    <div class="cont">
+        <ul class="c_list">
+            <li>어메니티 : 샴푸, 바디워시, 컨디셔너, 치약/칫솔, 면도기</li>
+            <li>LED TV(43인치)</li>
+            <li>비데</li>
+            <li>전기포트</li>
+            <li>냉장고</li>
+            <li>WiFi Free(무선인터넷 무료)</li>
+            <li>생수 2병, 커피·녹차 티백 제공</li>
+            <!-- <li>코튼 가운 (면 100%)</li> -->
+            <li>슬리퍼</li>
+            <li>헤어드라이기</li>
+        </ul>
+    </div>
+</div>
+
+<!--펫룸-->
+<div class="description">
+    <div class="title">
+        <h5>PET ROOM INFO</h5>
+    </div>
+    <div class="cont">
+        <ul class="c_list">
+            <li>애완동물 동반 객실(펫룸) 예약시 1마리까지 투숙 가능<br>(1마리당 10kg미만 제한)</li>
+            <li class="dot-no">※ 2마리 동반 희망시 1마리당 50,000원의 추가요금 발생 <br>&nbsp;&nbsp;&nbsp;(2마리 초과시 입실 불가)</li>
+            <li>입실 전 프론트에 알려주시기 바랍니다.</li>
+            <li>기본 예방접종을 하지 않은 애완동물은 투숙 불가 </li>
+            <li class="dot-no">※ 최근 3개월이내 예방접종 확인서 필수 지참</li>
+            <li>입실 시 프론트에서 애완견 관련 서약서에 동의, 서명 필수</li>
+            <li class="dot-no">※ 최근 3개월이내 예방접종 완료, 시설 내에서 동물을 안고 다님 등의 서약</li>
+            <li>이용 시 다음사항을 준수하여 주십시오.</li>
+            <li class="dot-no">※ 외출 후 입실 시 동물의 발을 닦아주세요.</li>
+            <li class="dot-no">※ 배설물은 변기에 버리고 패드는 위생팩에 담아 휴지통에 버려주세요.</li>
+            <li class="dot-no">※ 침구, 비품, 설비 등을 파손 또는 오염시키는 경우 별도 수리비 부과<br>&nbsp;&nbsp;&nbsp;(체크인 시 카드 오픈 또는 현금 보증 요청)</li>
+            <li>안전을 위해 주차장, 엘리베이터, 로비에서는 동물을 꼭 안거나 하네스를 착용해 주세요.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="description">
+    <div class="title">
         <h5>SERVICE & BENEFIT</h5>
     </div>
     <div class="cont">
@@ -53,7 +96,6 @@
             <li><a href="http://seabay.co.kr/restaurant/?r=valueplate">조식의 이용안내는 [여기] 를 참고해 주세요. (밸류플레이트)</a></li>
             <li><a href="http://seabay.co.kr/facilities/?r=swimmingpool">수영장의 이용안내는 [여기] 를 참고해 주세요. (패밀리풀 / 인피니티풀)</a></li>
         </ul> -->
-
         <ul class="c_list">
             <li>체크인 (입실) 15:00 / 체크아웃 (퇴실) 11:00</li>
             <!-- <li>호텔 내 애완동물은 동반 불가합니다.</li> -->
@@ -121,7 +163,7 @@
     </div>
     <div class="cont">
         <div class="btn_box">
-            <a class="b_btn_darkgray" href="../../main/map/index.html">상세 정보 확인하기</a>
+            <a class="b_btn_darkgray" href="../../main/map/index.php">상세 정보 확인하기</a>
         </div>
     </div>
 </div> -->

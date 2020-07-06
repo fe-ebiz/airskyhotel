@@ -61,6 +61,7 @@
             <div id="slider_main" class="slider_container smain">
                 <div data-u="slides" class="slides">
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_06.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
@@ -72,6 +73,7 @@
             <div id="slider_mmain" class="slider_container mob">
                 <div data-u="slides" class="slides">
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_06.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
                     <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
