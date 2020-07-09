@@ -1,0 +1,102 @@
+@@loop('src/template/include/landing/_landing_head.html', [
+	{"cssPathList":[]}
+])
+
+
+<body>
+	<main class="breakfast-intro">
+		<!--메인 이미지-->
+		<div class="contents-main">
+			<img src="http://img.hotelairsky.co.kr/svc/img/landing/breakfast/contents_main.jpg" alt="메인 콘텐츠">
+		</div>
+
+		<!--주문 버튼-->
+		<button class="btn-order" type="button">
+			<img src="http://img.hotelairsky.co.kr/svc/img/landing/breakfast/btn_order.jpg" alt="주문하기 버튼">
+		</button>
+
+		<!--주문-->
+		<div class="order-box">
+			<div class="order-top-box">
+				<p class="top-title">조식 예약하기</p>
+				<button class="btn-close" type="button">X</button>
+			</div>
+			<form class="order-form">
+				<div class="date-box">
+					<p class="date-title">조식 이용일</p>
+					<button class="btn-select-date" type="button">날짜 선택</button>
+				</div>
+				<div class="product-box">
+					<p class="product-tilte">조식</p>
+					<ul class="product-ul">
+						<li>
+							<p class="product-name">뷔페 조식 대인</p>
+							<div class="price-info-box">
+								<div class="price-txt-box">
+									<p class="p-price-cost"><span>19,900</span>원</p>
+									<p class="p-price-sale"><span class="span-red">14,900</span>원</p>
+								</div>
+								<div class="people-count-box">
+								<select>
+									<option value="0">0 인</option>
+									<option value="1">1 인</option>
+									<option value="2">2 인</option>
+									<option value="3">3 인</option>
+									<option value="4">4 인</option>
+									<option value="5">5 인</option>
+									<option value="6">6 인</option>
+									<option value="7">7 인</option>
+									<option value="8">8 인</option>
+									<option value="9">9 인</option>
+									<option value="10">10 인</option>
+								</select>
+							</div>
+							</div>
+						</li>
+						<li>
+							<p class="product-name">뷔페 조식 소인</p>
+							<div class="price-info-box">
+								<div class="price-txt-box">
+									<p class="p-price-cost"><span>14,900</span>원</p>
+									<p class="p-price-sale"><span class="span-red">9,900</span>원</p>
+								</div>
+								<div class="people-count-box">
+								<select>
+									<option value="0">0 인</option>
+									<option value="1">1 인</option>
+									<option value="2">2 인</option>
+									<option value="3">3 인</option>
+									<option value="4">4 인</option>
+									<option value="5">5 인</option>
+									<option value="6">6 인</option>
+									<option value="7">7 인</option>
+									<option value="8">8 인</option>
+									<option value="9">9 인</option>
+									<option value="10">10 인</option>
+								</select>
+							</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button class="btn-pay" type="button">결제하기</button>
+			</form>
+		</div>
+	</main>
+</body>
+
+<script>
+
+$(document).ready(function(){
+	//보이기
+	$('.btn-order').on("click",function(){
+		$('.order-box').show();
+	})
+	//닫기
+	$('.btn-close').on("click",function(){
+		$('.order-box').hide();
+	})
+})
+</script>
+
+</html>

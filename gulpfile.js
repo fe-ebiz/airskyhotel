@@ -33,6 +33,18 @@ function bSyncTest() {
 		}
 	});
 };
+
+function bSyncLanding() {
+	browserSync.init({
+		// watch: true,
+		port: 3035,
+		startPath: './landing/breakfast_intro.html',
+		server: {
+			baseDir: './dist'
+		}
+	});
+};
+
 function template() {
 	return src(config.template.src, {since: lastRun(template)})
 		.pipe(fileinclude({
@@ -228,3 +240,7 @@ exports.serve = parallel(series(parallel(template), static, sassDev, img, etc, b
 exports.build = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
 exports.buildNoImg = parallel(series(parallel(template), static, sassDev, etc, bSync), watching);
 exports.test = series(parallel(template), static, sassPrd, img, etc, copyTest, testPathServer, bSyncTest);
+
+exports.land = parallel(series(parallel(template), static, sassDev, img, etc, bSyncLanding), watching);
+
+
