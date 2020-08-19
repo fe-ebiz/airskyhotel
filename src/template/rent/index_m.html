@@ -209,7 +209,7 @@
                         장기이용은 전화상담시 이용일자에 따라<br>
                         최대 40~50%의 할인요금을 안내해드립니다.
                     </p>
-                    <div class="btn_search"><a href="tel:01088440409" title="전화걸기">전화문의 010-8844-0409 </a></div>
+                    <div class="btn_search"><a href="tel:01088171634" title="전화걸기">전화문의 010-8817-1634 </a></div>
                 </td>
             </tr>
             <tr>
@@ -276,7 +276,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <div class="btn_search"><a href="tel:01088440409" title="전화걸기">전화문의 010-8844-0409 </a></div>
+                    <div class="btn_search"><a href="tel:01088171634" title="전화걸기">전화문의 010-8817-1634 </a></div>
                 </td>
             </tr>
         </tbody>
@@ -306,7 +306,26 @@
 
 
     <div class="clr"></div>
-
+    <!--버튼_스크롤 탑으로-->
+    <div class="btn-scroll-move-box">
+        <a href="javascript:;" class="btn-move-top" role="button" onclick="$( 'html, body' ).animate( { scrollTop : 0 }, 400 )">
+            <img src="http://img.monopalace.com/landing/inquiry/go_top.png" alt="위로">
+        </a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                let scroll_H = $(document).scrollTop();
+                if(scroll_H > 500){
+                    $(".btn-scroll-move-box").show();
+                }
+                else{
+                    $(".btn-scroll-move-box").hide();
+                }
+            });
+        })
+    </script>
+    <!--///버튼_스크롤 탑으로-->
     @@include('src/template/include/_footer.html')
 </body>
 

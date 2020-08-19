@@ -1,0 +1,626 @@
+.wolmido-wrapper{
+    // font-family: 'Noto Sans KR', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: white;
+    *{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+        // image-rendering: auto;
+    }
+    button{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        margin: 0;
+        padding: 0;
+        // height: 0;
+        outline: none;
+    }
+    section{
+        width: 100%;
+        position: relative;
+    }
+    .wolmido-contents{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+
+    .wolmido-menu-box{
+        // z-index: 100;
+        .menu-ul{
+            max-width: 100%;
+            // width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 3px solid white;
+            &>li{
+                
+            }
+        }
+    }
+
+    .wolmido-intro{
+        // z-index: 10;
+        background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/intro/intro_bg.jpg') no-repeat;
+        background-position: center top;
+        background-size: 1920px;
+        height: 800px;
+        position: relative;
+        .intro-title{
+            padding-right: 67px;
+            width: 940px;
+            margin: 0 auto;
+            padding-top: 115px;
+        }
+    }
+    .wolmido-fun{
+        width: 100%;
+        z-index: 10;
+        margin-top: -50px;
+        margin-bottom: -150px;
+        .fun-bg-top{
+            background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/fun/fun_bg_top.png') no-repeat;
+            background-position: center bottom;
+            background-size: 1920px;
+            height: 84px;
+            margin-bottom: -1px;
+        }
+        .fun-wrap{
+            background:
+            url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/fun/fun_bg_bottom_left.png') no-repeat, 
+            url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/fun/fun_bg_bottom_right.png') no-repeat,
+            #005cd0;
+            background-position: -20px bottom, 104% bottom;
+            background-size: 387px, 400px;
+            padding-bottom: 80px;
+            .fun-contents{
+
+                .fun-title{
+                    width: 605px;
+                    margin: 0 auto;
+                    margin-top: 120px;
+                    margin-bottom: 63px;
+                }
+                .fun-tour-box{
+                    .tour-ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        // flex-flow: row;
+                        &>li{
+                            width: 320px;
+                            margin-bottom: 30px;
+                            display: flex;
+                            flex-flow: column;
+                            align-items: stretch;
+                            .txt-box{
+                                background-color: white;
+                                padding-left: 16px;
+                                padding-right: 14px;
+                                padding-top: 20px;
+                                padding-bottom: 25px;
+                                // height: 170px;
+                                height: 100%;
+                                
+                                .txt-name{
+                                    color: #333;
+                                    font-size: 17.5px;
+                                    margin-bottom: 10px;
+                                    letter-spacing: -1px;
+                                }
+                                .txt-contents{
+                                    color: #555;
+                                    font-size: 16px;
+                                    line-height: 18px;
+                                    font-weight: 300;
+                                    letter-spacing: -0.8px;
+                                    // word-break: keep-all;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                .notice-fun{
+                    text-align: center;
+                    color: white;
+                    font-size: 22px;
+                    font-weight: 300;
+                    margin-top: 28px;
+                    letter-spacing: -0.7px;
+                }
+            }
+        }
+
+        .fun-bg-bottom{
+            background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/fun/fun_bg_bottom.png') no-repeat;
+            background-position: center top;
+            background-size: 1920px;
+            height: 76px;
+            margin-top: -50px;
+        }
+    }
+    .wolmido-map{
+        background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/map/map.jpg') no-repeat;
+        background-position: center bottom;
+        background-size: 1920px;
+        height: 1000px;
+    }
+    
+    .wolmido-guide{
+        margin-top: -170px;
+        // margin-bottom: -60px;
+        .guide-bg-top{
+            background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/guide/guide_bg_top.png') no-repeat;
+            background-position: center bottom;
+            background-size: 1920px;
+            height: 80px;
+            margin-bottom: -1px;
+        }
+        .guide-wrap{
+            background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/guide/guide_bg_wave.png') no-repeat,
+            url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/guide/guide_bg_wave.png') no-repeat;
+            background-position: left calc(50% + 1100px) top 662px, left calc(50%  - 780px) top 1230px;
+            background-size: 1980px, 1980px;
+            background-color: #00a263;
+            // height: 1200px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            .guide-contents{
+                
+                .guide-title{
+                    width: 574px;
+                    margin: 0 auto;
+                    margin-top: 121px;
+                    margin-bottom: 90px;
+                }
+                .guide-main{
+                    padding: 0 20px;
+                    
+                    &>div{
+                        margin-bottom: 76px;  
+                    }
+                    .table-schedule{
+                        .notice-schedule{
+                            text-align: center;
+                            color: white;
+                            font-size: 22px;
+                            font-weight: 300;
+                            margin-top: 30px;
+                            letter-spacing: -0.55px;
+                        }
+                    }
+     
+                }
+            }
+            
+        }
+    }
+
+    
+
+    .wolmido-booking{
+        z-index: 10;
+        background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/booking/booking_bg.png') no-repeat;
+        background-position: center top;
+        background-size: 1920px;
+        // height: 2700px;
+        margin-top: -60px;
+        padding-top: 146px;
+        padding-bottom: 124px;
+        .booking-wrap{
+            background: url('http://img.hotelairsky.co.kr/svc/img/landing/wolmido/booking/booking_bg2.png') no-repeat;
+            background-position: left calc(50% + 650px - 340px) top 143px;
+            background-size: 1300px;
+            .booking-contents{
+                .booking-intro{
+                    background: url('http://img.hotelairsky.co.kr/svc/img/symbol/top_logo_w.png') no-repeat;
+                    background-position: right 10px top 20px;
+                    background-size: 245px;
+                    margin-top: 120px;
+                    .intro-img-box{
+                        width: 550px;
+                    }
+                }
+                .booking-main{
+                    margin-top: 134px;
+                    .main-top{
+
+                    }
+                    .main-contents{
+                        margin-top: 20px;
+                        display: flex;
+                        &>*{
+                            width: 50%
+                        }
+
+                    }
+                }
+                .booking-sub{
+                    margin-top: 20px;
+                    .sub-ul{
+                        display: flex;
+                        justify-content: space-between;
+                        &>li{
+                            width:32%;
+                            .txt-title{
+                                font-size: 15px;
+                                margin: 15px 0;
+                            }
+                            .txt-contents{
+                                color: #666;
+                                font-size: 14px;
+                                word-break: keep-all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.wolmido-btn-bottom{
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #ffe033;
+    }
+}
+.wolmido-side-banner{
+    z-index: 30;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-left: 560px;
+    // margin: calc(20/100vw);
+    width: 200px;
+    .banner-wrapper{
+        position: relative;    
+        .btn-go-booking{
+            display: block;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .btn-go-ul{
+            margin: 0 auto;
+            width: 150px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            height: 480px;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 20%;
+                height: 60%;
+                left: 0;
+                right: 14px;
+                margin: 0 auto;
+                width: 3px;
+                background-color: white;
+            }
+            &>li{
+                z-index: 10;
+                width: 135px;
+                height: 135px;
+                border-radius: 135px;
+                text-align: center;
+                background-color: #0078da;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                a{
+                    display: block;
+                }
+                &.active{
+                    border: solid 3px white;
+                }
+                &:nth-of-type(1){
+                    a{
+                        width: 72px;
+                    }
+                    &.active{
+                        background-color: #005cd0;
+                    }
+                }
+                &:nth-of-type(2){
+                    a{
+                        width: 103px;
+                    }
+                    &.active{
+                        background-color: #00a263;
+                    }
+                }
+                &:nth-of-type(3){
+                    a{
+                        width: 94px;
+                    }
+                    &.active{
+                        background-color: #63a3ec;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+
+
+
+@media (max-width:1000px){
+.wolmido-wrapper{
+    .wolmido-menu-box{
+        .menu-ul{
+            padding: 0 calc(20/1000 * 100vw);
+            border-bottom: calc(3/1000 * 100vw) solid white;
+            &>li{
+                
+            }
+        }
+    }
+
+    .wolmido-intro{
+        background-size:calc(1920/1000 * 100vw);
+        height: calc(800/1000 * 100vw);
+        .intro-title{
+            padding-right: calc(67/1000 * 100vw);
+            width: calc(940/1000 * 100vw);
+            margin: 0 auto;
+            padding-top: calc(115/1000 * 100vw);
+        }
+    }
+
+    .wolmido-fun{
+        margin-bottom: calc(-150/1000 * 100vw);
+        .fun-bg-top{
+            background-size: calc(1920/1000 * 100vw);
+            height: calc(84/1000 * 100vw);
+        }
+        .fun-wrap{
+            background-image: none;
+
+            .fun-contents{
+                .fun-title{
+                    width: calc(605/1000 * 100vw);
+                    margin-top: calc(120/1000 * 100vw);
+                    margin-bottom: calc(63/1000 * 100vw);
+                }
+                .fun-tour-box{
+                    padding: 0 20px;
+                    .tour-ul{
+                        &>li{
+                            display: flex;
+                            flex-flow: column;
+                            // height: 100%;
+                            width: 49%;
+                            margin-bottom: calc(20/1000 * 100vw);
+                            .txt-box{
+                                padding-top: calc(20/1000 * 100vw);
+                                // height: calc(100% - 200/1000 * 100vw);
+                                padding-left: calc(16/1000 * 100vw);
+                                padding-right: calc(14/1000 * 100vw);
+                                
+                                padding-bottom: calc(25/1000 * 100vw);
+                                .txt-name{
+                                    font-size: calc(28/1000 * 100vw);
+                                    height: auto;
+                                }
+                                .txt-contents{
+                                    font-size: 20px;   
+                                    line-height:22px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .notice-fun{
+                    text-align: center;
+                    color: white;
+                    font-size: calc(25/1000 * 100vw);
+                    margin-top: calc(28/1000 * 100vw);
+                }
+            }
+        }
+        .fun-bg-bottom{
+            background-size: calc(1920/1000 * 100vw);
+            height: calc(76/1000 * 100vw);;
+            margin-top: calc(-50/1000 * 100vw);
+        }
+    }
+
+
+    .wolmido-map{
+        background-position: center center;
+        background-size: calc(1800/1000 * 100vw);
+        height: calc(1000/1000 * 100vw);
+    }
+
+    .wolmido-guide{
+        margin-top: calc(-180/1000 * 100vw);
+        .guide-bg-top{
+            background-size:calc(1920/1000 * 100vw);
+            height: calc(80/1000 * 100vw);
+        }
+        .guide-wrap{
+
+            background-size: calc(1980/1000 * 100vw), calc(1980/1000 * 100vw);
+            padding-top: calc(30/1000 * 100vw);
+            padding-bottom: calc(50/1000 * 100vw);
+
+            .guide-contents{
+                
+                .guide-title{
+                    width: calc(574/1000 * 100vw);
+                    margin-top: calc(120/1000 * 100vw);
+                    margin-bottom: calc(90/1000 * 100vw);
+                    
+                }
+                .guide-main{
+                    &>div{
+                        margin-bottom: calc(76/1000 * 100vw);  
+                    }
+                    .table-schedule{
+                        .notice-schedule{
+                            font-size: calc(25/1000 * 100vw);
+                            margin-top: calc(30/1000 * 100vw);
+                        }
+                    }
+     
+                }
+                
+            }
+            
+        }
+    }
+
+
+    .wolmido-booking{
+        background-size: calc(3500/1000 * 100vw);
+        padding-top: calc(146/1000 * 100vw + 10px);
+        padding-bottom: calc(124/1000 * 100vw);
+        margin-top: calc(-110/1000 * 100vw);
+        .booking-wrap{
+            background-size: calc(1300/1000 * 100vw);
+            background: none;
+            .booking-contents{
+                &>div{
+                    padding: 0 20px;
+                }
+                .booking-intro{
+                    background: none;
+                    margin-top: calc(120/1000 * 100vw);
+                    .intro-img-box{
+                        // width: calc(550/1000 * 100vw);
+                        width: 100%;
+                    }
+                }
+                .booking-main{
+                    margin-top: calc(50/1000 * 100vw);
+
+                    .main-top{
+
+                    }
+                    .main-contents{
+                        margin-top: 20px;
+                        display: block;
+                        // flex-direction: column;
+                        &>*{
+                            display: block;
+                            width: 100%;
+                            background-color: white;
+                            img{
+                                display: block;
+                                margin: 0 auto;
+                                width: 90%;
+                            }
+                            
+                        }
+                        .img-box{
+                            padding-top: 5%;
+                            // height: calc(500/1000 * 100vw)
+                        }
+                        .go-booking{
+                            padding-bottom: 5%;
+                        }
+                    }
+                }
+                .booking-sub{
+                    margin-top: 20px;
+                    
+                    .sub-ul{
+                        display: block;
+                        &>li{
+                            margin-bottom: 20px;
+                            width:100%;
+
+                            .txt-title{
+
+                            }
+                            .txt-contents{
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .wolmido-btn-bottom{
+        display: block;
+    }
+
+}
+body{
+        
+    padding-bottom: calc(160/1000 * 100vw);
+}
+}
+
+@media (max-width:600px){
+.wolmido-wrapper{
+    .wolmido-fun{
+        margin-bottom: calc(-150/1000 * 100vw);
+        .fun-bg-top{
+            background-size: calc(1920/1000 * 100vw);
+            height: calc(84/1000 * 100vw);
+        }
+        .fun-wrap{
+            background-image: none;
+
+            .fun-contents{
+                .fun-title{
+                }
+                .fun-tour-box{
+                    .tour-ul{
+                        &>li{
+
+                            .txt-box{
+                                padding-top: calc(16/600 * 100vw);
+                                // height: calc(100% - 200/1000 * 100vw);
+                                padding-left: calc(14/600 * 100vw);
+                                padding-right: calc(12/600 * 100vw);
+                                
+                                padding-bottom: calc(20/600 * 100vw);
+                                .txt-name{
+                                    font-size: calc(20/600 * 100vw);
+                                    height: auto;
+                                    margin-bottom: 4px;
+                                }
+                                .txt-contents{
+                                    font-size: 13px;   
+                                    line-height:15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .notice-fun{
+
+                }
+            }
+        }
+        
+    }
+}
+
+}

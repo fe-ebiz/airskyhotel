@@ -229,6 +229,51 @@ hr {
         }
     }
 
+    //메뉴
+    .tourist-bottom-menu{
+        width: 100%;
+        border-top: 1px solid #d4d4d4;
+        padding-top: 4%;
+        .bottom-menu-ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &>li{
+                width: 31.8%;
+                a{
+                    .title-box{
+                        background: url("http://img.hotelairsky.co.kr/svc/img/tourist/common/icon_go.png") no-repeat right bottom;
+                        margin-bottom: 4.8%;
+                        h5{
+                            font-size: 20px;
+                            margin: 0;
+                            padding: 0;
+                            margin-bottom: 0.4%;
+                        }
+                        p{
+                            font-size: 14px;
+                            letter-spacing: -0.6px;
+                        }
+                        .txt-pc{
+                            display: block;
+                        }
+                        .txt-m{
+                            display: none;
+                        }
+                    }
+                    .img-pc{
+                        display: block;
+                    }
+                    .img-m{
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+
 }
 
 @media (max-width: 1199px) {
@@ -256,6 +301,39 @@ hr {
                     }
                 }
             }
+        }
+        .tourist-bottom-menu{
+            .bottom-menu-ul{
+                &>li{                    
+                    a{
+                        .title-box{
+                            background-size: 14.6%;
+                            background-position: right top;
+                            h5{
+                                font-size: 26px;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                            .txt-pc{
+                                display: none;
+                            }
+                            .txt-m{
+                                display: block;
+                            }
+                        }
+                        .img-pc{
+                            display: none;
+                        }
+                        .img-m{
+                            display: block;
+                        }
+
+                    }
+                }
+                    
+            }
+            
         }
     }
 }
@@ -345,6 +423,38 @@ hr {
                 }
             }
         }
+        
     }
+    
+    
+}
 
+@media (max-width: 767px) {
+    .tourist-sec {
+        .tourist-bottom-menu{
+            .bottom-menu-ul{
+                &>li{                    
+                    a{
+                        .title-box{
+                            h5{
+                                font-size: calc(26/767 * 100vw);
+                            }
+                            p{
+                                font-size: calc(20/767 * 100vw);
+                            }
+                            .txt-pc{
+                                display: none;
+                            }
+                            .txt-m{
+                                display: block;
+                            }
+                        } 
+                    }
+                }  
+            }
+        }
+    }
+    .bottom-menu-sec{
+        padding-bottom: calc(26/767 * 100vw);
+    }
 }

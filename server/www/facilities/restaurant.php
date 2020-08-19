@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <!--임시공지사항-->
-                        <div class="item_info">
+                        <!-- <div class="item_info">
                             <div class="info_wrap">
                                 <h5 class="info_title">시설안내</h5>
                                 <div class="info_content"><b>[공지] 에어스카이호텔 레스토랑 운영중단 안내</b></div>
@@ -61,25 +61,32 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <!-- <div class="item_info">
+                        </div> -->
+                        <div class="item_info">
                             <div class="info_wrap">
                                 <h5 class="info_title">위치안내</h5>
                                 <div class="info_content">2층</div>
                             </div>
                             <div class="info_wrap">
+                                <h5 class="info_title">운영안내</h5>
+                                <div class="info_content">
+                                <span class="sh_small">아메리칸 조식뷔페 (약 40여가지 뷔페식단 제공)</span><br>
+                                <span class="sh_small">조식은 매주 토, 일요일, 공휴일만 운영</span>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
                                 <h5 class="info_title">운영시간</h5>
                                 <div class="info_content">
-                                    <span class="sh_small">주중 / 주말 오전 07:00 ~ 10:00</span><br />
+                                    <span class="sh_small">오전 07:00 ~ 10:00 (09:30분 입장마감)</span><br />
+                                    <span class="sh_small">※ 매주 토, 일요일, 공휴일만 운영</span><br />
                                 </div>
                             </div>
                             <div class="info_wrap">
                                 <h5 class="info_title">조식요금</h5>
                                 <div class="info_content">
-                                    <span class="sh_small">주중/주말 공통</span><br />
-                                    <span class="sh_small">* 대인: 22,000원</span><br>
-                                    <span class="sh_small">* 소인: 11,000원(13세 미만)</span><br>
-                                    <span class="sh_small">※ 조식 요금은 현장 상황에 의해 변경될 수 있습니다.</span>
+                                    <span class="sh_small">* 대인 : 정상가 19,900원 > 당일현장 구매가 17,900원</span><br>
+                                    <span class="sh_small">* 소인 : 정상가 14,900원 > 당일현장 구매가 12,900원</span><br>
+                                    <span class="sh_small">※ 소인기준 : 4세~13세(초등학생) / 36개월 미만 유아 무료</span>
                                 </div>
                             </div>
                             <div class="info_wrap">
@@ -89,7 +96,7 @@
                                     이메일 : <span class="sh_small">airskyhotel@ebiznetworks.co.kr</span>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ function bSyncLanding() {
 	browserSync.init({
 		// watch: true,
 		port: 3035,
-		startPath: './landing/breakfast_intro.html',
+		startPath: './landing/land_wolmido.html',
 		server: {
 			baseDir: './dist'
 		}
@@ -91,17 +91,17 @@ function templateMAll() {
 };
 // {outputStyle: nested} expanded, compact, compressed
 function sassDev() {
-	return src(config.sass.src, {sourcemaps: true})
+	return src(config.sass.src, {sourcemaps: false})
 		.pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(dest(config.sass.dest, {sourcemaps: true}))
+		.pipe(dest(config.sass.dest, {sourcemaps: false}))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 };
 function sassDevAll() {
-	return src([config.sass.src, config.sass.parts], {sourcemaps: true})
+	return src([config.sass.src, config.sass.parts], {sourcemaps: false})
 		.pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(dest(config.sass.dest, {sourcemaps: true}))
+		.pipe(dest(config.sass.dest, {sourcemaps: false}))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 };
 function sassPrd() {

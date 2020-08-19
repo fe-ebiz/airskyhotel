@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout_goco.css" type="text/css">
 <link rel="stylesheet" href="http://static.seabay.co.kr/svc/css/rent/init_m.css">
+<link rel="stylesheet" href="http://static.hotelairsky.co.kr/svc/css/rent/init_m.css">
 
 <div class="body"></div>
 <br class="br_sub">
@@ -182,14 +183,14 @@
         </tr>
         <tr>
             <td colspan="2">
-                <div class="btn_search"><a href="tel:01088440409" title="전화걸기">전화문의 010-8844-0409 </a></div>
+                <div class="btn_search"><a href="tel:01088171634" title="전화걸기">전화문의 010-8817-1634 </a></div>
             </td>
         </tr>
     </tbody>
 </table>
 
 <!-- 상단 슬라이드 -->
-<script text="text/javascript">
+<!-- <script text="text/javascript">
     $(function() {
 
         var swiper = new Swiper('.swiper-container', {
@@ -207,8 +208,30 @@
         });
 
     });
-</script>
+</script> -->
 <!--//190109 장단기숙박 -->
 
 
 <div class="clr"></div>
+
+
+<!--버튼_스크롤 탑으로-->
+<div class="btn-scroll-move-box">
+    <a href="javascript:;" class="btn-move-top" role="button" onclick="$( 'html, body' ).animate( { scrollTop : 0 }, 400 )">
+        <img src="http://img.monopalace.com/landing/inquiry/go_top.png" alt="위로">
+    </a>
+</div>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            let scroll_H = $(document).scrollTop();
+            if(scroll_H > 500){
+                $(".btn-scroll-move-box").show();
+            }
+            else{
+                $(".btn-scroll-move-box").hide();
+            }
+        });
+    })
+</script>
+<!--///버튼_스크롤 탑으로-->

@@ -1,0 +1,304 @@
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<!--//슬리이더 영역-->
+<script>
+    let funSliderInfo;
+    $.ajax({
+        url : "./wolmido_slider_info.html",
+        type : "get",
+        async: false,
+        dataType : "text",
+        success : function (data) {
+            // console.log(data)
+            funSliderInfo = JSON.parse(data);
+        },
+        error : function (data) {
+            // alert(data);
+            console.log("슬라이더 오류")
+        }
+    });
+
+    $(document).ready(function(){
+        let sliderMenu = $(".slider-menu-ul");
+        let sliderView = $(".view-ul");
+
+        //견본 가져온 후 지우기
+        let menuListSample = sliderMenu.clone();
+        $(".slider-menu-ul li").remove();
+        let viewListSample = sliderView.clone();
+        $(".view-ul li").remove();
+
+        //기초 세팅
+        $.each(funSliderInfo, function(index, data){
+            let lastMenuList = menuListSample.clone();
+            let lastViewList = viewListSample.clone();
+            //값 세팅
+            lastMenuList.find('.txt-num').text(index+1);
+            lastMenuList.find('.txt-name').text(data.name);
+            lastViewList.find('.view-img-box img').attr("src","http://img.hotelairsky.co.kr/svc/img/landing/wolmido/fun/"+data.imgPath);
+            lastViewList.find('.txt-intro').text(data.text.intro);
+
+            //목록태그 추가하기
+            sliderMenu.append(lastMenuList.html());  
+            sliderView.append(lastViewList.html())
+        });
+
+        //변수선언
+        let viewlistArr = sliderView.children("li");
+        let viewMenuArr = sliderMenu.children("li");
+        let viewFrame = sliderView.parent();
+        let viewIndex = 0;
+
+        //초기 메뉴 활성화 세팅
+        viewMenuArr.eq(0).addClass("active");
+
+        //리사이즈시 작동
+        $(window).resize(function(){
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+            sliderView.css('height',viewHeight);    
+        })
+
+        //메뉴클릭시 작동
+        viewMenuArr.on('click',function(){
+            viewMenuArr.removeClass("active");
+            $(this).addClass("active");
+            viewIndex = $(this).index();
+            setOrder();
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+            sliderView.css('height', viewHeight);
+        });
+
+        //드래그 작동
+        let startMouseX;
+        sliderView.draggable({
+            axis: "x",
+            start: function(e){
+                startMouseX = e.pageX;
+                viewIndex--;
+                if(viewIndex < 0){
+                    viewIndex = viewlistArr.length - 1;
+                }
+                
+                let transX = viewlistArr.eq(viewIndex).width();
+                sliderView.css({'transform':'translateX('+(-transX.toString())+'px)'});
+                setOrder();
+                viewIndex++;
+                if(viewIndex >= viewlistArr.length){
+                    viewIndex = 0;
+                }
+
+            },
+
+            stop:function(e){
+                if((startMouseX - 40) > e.pageX){
+                    sliderView.css({'transform':'translateX('+'0px)'});
+                    setOrder();
+                    console.log("왼쪽.")
+                    dragAniLeft();
+                    
+                }
+                else if((startMouseX + 40) < e.pageX){
+                    sliderView.css({'transform':'translateX('+'0px)'});
+                    setOrder();
+                    console.log("오른쪽.")
+                    dragAniRight();
+                }
+                else{
+                    sliderView.animate({
+                        left: 0,
+                    }, 300,function(){
+                        sliderView.css({'transform':'translateX('+'0px)'});
+                        setOrder();
+                    });
+                
+                }
+            }
+        });
+        let viewOneClickOn = false;
+        viewlistArr.on("touchstart mousedown",function(e){
+            if(viewOneClickOn == true){
+                return;
+            }
+            // viewOneClickOn = true;
+            // viewIndex --;
+            // if(viewIndex < 0){
+            //     viewIndex = viewlistArr.length - 1;
+            // }
+            // let newLeftPos = viewlistArr.eq(viewIndex).width();
+            // sliderView.css("left", -newLeftPos);
+            // setOrder();
+            // viewIndex ++;
+            // console.log(viewIndex);
+        });
+        $(document).on("touchend mouseup",function(e){
+            if(viewOneClickOn == false){
+                return;
+            }
+            viewOneClickOn = false;
+            // viewIndex ++;
+            // if(viewIndex >= viewlistArr.length){
+            //     viewIndex = 0;
+            // }
+           
+            // sliderView.css("left", "");
+                
+            // setOrder();
+            // console.log(viewIndex);
+        });
+
+
+        //왼쪽 오른쪽 부분
+        let clickOn = false;
+        $(".btn-view-left").on('click', function(){
+            
+            //중복 클릭 방지
+            if(clickOn === true)
+            {
+                return false;
+            }
+            clickOn = true;
+
+            //인덱스 업
+            viewIndex--;
+            if(viewIndex < 0){
+                viewIndex = viewlistArr.length - 1;
+            }
+
+            //메뉴변경
+            viewMenuArr.removeClass("active");
+            viewMenuArr.eq(viewIndex).addClass("active");
+
+            //이전 사이즈 가져오기
+            let newLeftPos = viewlistArr.eq(viewIndex).width();
+            //높이 가져오기
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+
+            setOrder();
+            sliderView.css("left", -newLeftPos);
+
+            // $('element').animate().css('overflow', 'visible');
+            //애니작동
+            sliderView.animate({
+                left: "+="+ newLeftPos.toString(),
+                height: viewHeight.toString(),
+            }, 300, function() {
+                //애니 완료 후 작동
+                sliderView.css("left","");
+                sliderView.css('height',viewHeight);    
+                clickOn = false;
+            }).css('overflow', 'visible');
+
+        });
+
+        $(".btn-view-right").on('click',function(){
+            
+            //중복 클릭 방지
+            if(clickOn === true)
+            {
+                return false;
+            }
+            clickOn = true;
+
+            //현재 가로사이즈 가져오기
+            let newLeftPos = viewlistArr.eq(viewIndex).width();
+            //인덱스 업
+            viewIndex++
+            if(viewIndex >= viewlistArr.length){
+                viewIndex = 0;
+            }
+
+            //이후 높이 가져오기
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+
+            //메뉴변경
+            viewMenuArr.removeClass("active");
+            viewMenuArr.eq(viewIndex).addClass("active");
+
+            //애니작동
+            sliderView.animate({
+                left: "-="+ newLeftPos.toString(),
+                height: viewHeight.toString(),
+            }, 300, function() {
+                //애니 완료 후 작동
+                sliderView.css("left","");
+                sliderView.css('height',viewHeight);
+                setOrder();
+                clickOn = false;
+            }).css('overflow', 'visible'); 
+        });
+
+        let setOrder = function(){
+            $.each(viewlistArr, function(index, data){
+                if(index < viewIndex){
+                    $(data).css("order", viewlistArr.length - viewIndex + index);
+                }
+                else{
+                    $(data).css("order", index - viewIndex)
+                }
+            });
+        }
+
+        let dragAniRight = function(){
+            //인덱스 업
+            viewIndex--;
+            if(viewIndex < 0){
+                viewIndex = viewlistArr.length - 1;
+            }
+
+            //메뉴변경
+            viewMenuArr.removeClass("active");
+            viewMenuArr.eq(viewIndex).addClass("active");
+
+            //이전 사이즈 가져오기
+            let newLeftPos = viewlistArr.eq(viewIndex).width() - parseInt(sliderView.css("left"));
+            //높이 가져오기
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+
+            setOrder();
+            sliderView.css("left", -newLeftPos);
+
+            // $('element').animate().css('overflow', 'visible');
+            //애니작동
+            sliderView.animate({
+                left: "+="+ newLeftPos.toString(),
+                height: viewHeight.toString(),
+            }, 300, function() {
+                //애니 완료 후 작동
+                sliderView.css("left","");
+                sliderView.css('height',viewHeight);    
+                clickOn = false;
+            }).css('overflow', 'visible');
+        }
+
+        let dragAniLeft = function(){
+            //현재 가로사이즈 가져오기
+            let newLeftPos = viewlistArr.eq(viewIndex).width() + parseInt(sliderView.css("left"));
+            
+            //인덱스 업
+            viewIndex++
+            if(viewIndex >= viewlistArr.length){
+                viewIndex = 0;
+            }
+
+            //이후 높이 가져오기
+            let viewHeight = viewlistArr.eq(viewIndex).height();
+
+            //메뉴변경
+            viewMenuArr.removeClass("active");
+            viewMenuArr.eq(viewIndex).addClass("active");
+
+            //애니작동
+            sliderView.animate({
+                left: "-="+ newLeftPos.toString(),
+                height: viewHeight.toString(),
+            }, 300, function() {
+                //애니 완료 후 작동
+                sliderView.css("left","");
+                sliderView.css('height',viewHeight);
+                setOrder();
+                clickOn = false;
+            }).css('overflow', 'visible'); 
+        }
+
+    });
+</script>

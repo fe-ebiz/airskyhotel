@@ -2,7 +2,7 @@
 
 /* 라마다/오션투유/BS콘도 예약하기 메뉴 */
 /* 라마다 기준 */
-.bk-menu {z-index: 99999; position: absolute; box-sizing: border-box; width: 144px; top: 0; right: 0; text-align: center; background: #ea3433;}
+.bk-menu {z-index: 9999; position: absolute; box-sizing: border-box; width: 144px; top: 0; right: 0; text-align: center; background: #ea3433;}
 .bk-menu a {position: relative; display: block; line-height: 1; color: #fff !important;}
 .bk-menu a[class*='btn-bk'] {font-size: 18px; font-weight: 600; }
 .bk-menu .btn-bk {padding: 53px 0 26px; background: url(http://img.hotelairsky.co.kr/svc/img/common/ico_bk_menu.png) no-repeat center 22px; background-size: 22px auto;}

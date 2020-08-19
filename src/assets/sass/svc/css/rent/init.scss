@@ -309,3 +309,13 @@
         }
     }
 }
+
+//버튼_스크롤 탑으로
+.btn-scroll-move-box{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(600px);
+}

@@ -88,6 +88,31 @@
         <figure class="nth-5"><img src="http://img.hotelairsky.co.kr/svc/img/rent/detail/05.jpg" alt="에어스카이호텔 소개이미지"></figure>
     </div>
 </div>
+
+<!--버튼_스크롤 탑으로-->
+<div class="btn-scroll-move-box">
+        <a href="javascript:;" class="btn-move-top" role="button" onclick="$( 'html, body' ).animate( { scrollTop : 0 }, 400 )">
+            <img src="http://img.monopalace.com/landing/inquiry/go_top.png" alt="위로">
+        </a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                let scroll_H = $(document).scrollTop();
+                if(scroll_H > 500){
+                    $(".btn-scroll-move-box").show();
+                }
+                else{
+                    $(".btn-scroll-move-box").hide();
+                }
+            });
+        })
+    </script>
+    <!--///버튼_스크롤 탑으로-->
+
+
+
+
 <style type="text/css">
 #call_pop_wrap { width: 600px; height: 300px; }
 #call_pop_wrap .close { cursor: pointer; background: url(<?=ocean_goimg?>/login_img03.jpg) no-repeat; display: box; width: 52px; height: 48px; float: right; }

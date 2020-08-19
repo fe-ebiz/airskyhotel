@@ -179,7 +179,7 @@
                                             최대 40~50%의 할인요금을 안내해드립니다.<br>
                                         </span>
                                         <p class="row clr">
-                                            <button type="button" class="btn-base btn-gray">문의신청 010-8844-0409</button>
+                                            <button type="button" class="btn-base btn-gray">문의신청 010-8817-1634</button>
                                         </p>
                                     </div>
                                 </td>
@@ -202,7 +202,26 @@
         </div>
     </div>
     <!-- //.rent-wrap -->
-
+    <!--버튼_스크롤 탑으로-->
+    <div class="btn-scroll-move-box">
+        <a href="javascript:;" class="btn-move-top" role="button" onclick="$( 'html, body' ).animate( { scrollTop : 0 }, 400 )">
+            <img src="http://img.monopalace.com/landing/inquiry/go_top.png" alt="위로">
+        </a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                let scroll_H = $(document).scrollTop();
+                if(scroll_H > 500){
+                    $(".btn-scroll-move-box").show();
+                }
+                else{
+                    $(".btn-scroll-move-box").hide();
+                }
+            });
+        })
+    </script>
+    <!--///버튼_스크롤 탑으로-->
     @@include('src/template/include/_footer.html')
 </body>
 

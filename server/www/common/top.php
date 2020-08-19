@@ -116,7 +116,7 @@
                         </div>
                         <ul class="cf menu">
                             <li>
-                                <a class="title">호텔소개</a>
+                                <a href="/main/about" class="title">호텔소개</a>
                                 <ul class="sub">
                                     <li><a href="/main/about">호텔 소개</a></li>
                                     <li><a href="/main/factsheet">시설 개요</a></li>
@@ -125,7 +125,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#none" class="title">객실안내</a>
+                                <a href="/rooms/?r=std_db" class="title">객실안내</a>
                                 <!-- 190719 메뉴 수정 -->
                                 <ul class="sub">
                                     <li><a href="/rooms/?r=std_db">슈페리어 더블</a></li>
@@ -141,7 +141,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="title">다이닝&amp;부대시설</a>
+                                <a href="/facilities/restaurant.php" class="title">다이닝&amp;부대시설</a>
                                 <ul class="sub">
                                     <li><a href="/facilities/restaurant.php">레스토랑</a></li>
                                     <li><a href="/facilities/conference.php">컨퍼런스룸</a></li>

@@ -268,7 +268,7 @@ figure>img {
             }
 
             .logo-box {
-                width: 520px;
+                width: 370px;
                 padding-left: 10px;
 
                 >h1 {
@@ -282,14 +282,14 @@ figure>img {
             }
 
             .nav {
-                padding-right: 144px;
+                padding-right: 142px;
 
                 .menu {
                     font-size: 0;
 
                     >li {
                         @include dp;
-                        font-size: 17px;
+                        font-size: 18px;
 
                         &:nth-last-of-type(1){
                             // display: none;
@@ -297,7 +297,7 @@ figure>img {
                         >a {
                             display: inline-block;
                             color: inherit;
-                            padding: 0 15px;
+                            padding: 0 12px;
                             line-height: 97px;
 
                             &:hover {
@@ -393,6 +393,9 @@ figure>img {
         .gnb {
             .logo-box {
                 width: auto;
+                .logo {
+                    width: 180px;
+                }
             }
 
             .nav {
@@ -425,7 +428,7 @@ figure>img {
                 width: auto;
 
                 .logo {
-                    width: 270px;
+                    width: 120px;
                 }
             }
 
@@ -434,10 +437,10 @@ figure>img {
 
                 .menu {
                     >li {
-                        font-size: 13px;
+                        font-size: 17px;
 
                         >a {
-                            padding: 0 5px;
+                            padding: 0 8px;
                         }
 
                         .sub {
@@ -458,6 +461,8 @@ figure>img {
     }
 }
 
+
+// @include screen-max(991px) {
 @include screen-max(991px) {
     .body {
         display: none;
@@ -714,3 +719,22 @@ figure>img {
         }
     }
 }
+
+@include screen-min-max(992px, 1150px) {
+    .header {
+        .gnb {
+            .nav{
+                .menu{
+                    &>li{
+                        font-size: 14.5px;
+                        &>a {
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
