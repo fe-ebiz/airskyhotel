@@ -258,24 +258,10 @@
                 // e.stopImmediatePropagation();
                 // e.stopPropagation();
                 let clickIndex = $(this).index();
-                let movePos = $(className[clickIndex]).offset().top;
-                
-                if(clickIndex == 0){
-                    $(document).scrollTop(movePos-40);
-                }
-                else if(clickIndex == 1){
-                    $(document).scrollTop(movePos-20);
-                }
-                else if(clickIndex == 2){
-                    $(document).scrollTop(movePos + 20);
-                    
-                }
+                let movePos = menuBoxArr.eq(clickIndex).offset().top;
+                let topMenuHeight = $(".header .gnb").outerHeight()
+                $(document).scrollTop(movePos - topMenuHeight - 10);
             })
-
-
-            
-            console.log(tourInfo);
-
            
 
         });

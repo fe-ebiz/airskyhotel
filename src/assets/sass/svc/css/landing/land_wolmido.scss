@@ -54,8 +54,8 @@
         height: 800px;
         position: relative;
         .intro-title{
-            padding-right: 67px;
-            width: 940px;
+            // padding-right: 67px;
+            width: 930px;
             margin: 0 auto;
             padding-top: 115px;
         }
@@ -112,6 +112,7 @@
                                 .txt-name{
                                     color: #333;
                                     font-size: 17.5px;
+                                    font-weight: 600;
                                     margin-bottom: 10px;
                                     letter-spacing: -1px;
                                 }
@@ -134,7 +135,7 @@
                     font-size: 22px;
                     font-weight: 300;
                     margin-top: 28px;
-                    letter-spacing: -0.7px;
+                    letter-spacing: -0.6px;
                 }
             }
         }
@@ -182,7 +183,7 @@
                     margin-bottom: 90px;
                 }
                 .guide-main{
-                    padding: 0 20px;
+                    // padding: 0 20px;
                     
                     &>div{
                         margin-bottom: 76px;  
@@ -194,7 +195,7 @@
                             font-size: 22px;
                             font-weight: 300;
                             margin-top: 30px;
-                            letter-spacing: -0.55px;
+                            letter-spacing: -0.6px;
                         }
                     }
      
@@ -300,7 +301,7 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
-            height: 480px;
+            height: 440px;
             position: relative;
             &:before{
                 content: "";
@@ -380,14 +381,19 @@
         background-size:calc(1920/1000 * 100vw);
         height: calc(800/1000 * 100vw);
         .intro-title{
-            padding-right: calc(67/1000 * 100vw);
-            width: calc(940/1000 * 100vw);
+            // padding-right: calc(67/1000 * 100vw);
+            width: calc(900/1000 * 100vw);
             margin: 0 auto;
             padding-top: calc(115/1000 * 100vw);
+            img{
+                margin-left: calc(-30/1000 * 100vw);
+            }
+            
         }
     }
 
     .wolmido-fun{
+        margin-top: calc(-90/1000 * 100vw);
         margin-bottom: calc(-150/1000 * 100vw);
         .fun-bg-top{
             background-size: calc(1920/1000 * 100vw);
@@ -398,7 +404,7 @@
 
             .fun-contents{
                 .fun-title{
-                    width: calc(605/1000 * 100vw);
+                    width: calc(725/1000 * 100vw);
                     margin-top: calc(120/1000 * 100vw);
                     margin-bottom: calc(63/1000 * 100vw);
                 }
@@ -433,7 +439,7 @@
                 .notice-fun{
                     text-align: center;
                     color: white;
-                    font-size: calc(25/1000 * 100vw);
+                    font-size: calc(35/1000 * 100vw);
                     margin-top: calc(28/1000 * 100vw);
                 }
             }
@@ -467,19 +473,21 @@
             .guide-contents{
                 
                 .guide-title{
-                    width: calc(574/1000 * 100vw);
+                    width: calc(694/1000 * 100vw);
                     margin-top: calc(120/1000 * 100vw);
                     margin-bottom: calc(90/1000 * 100vw);
                     
                 }
                 .guide-main{
+                    padding: 0 20px;
                     &>div{
                         margin-bottom: calc(76/1000 * 100vw);  
                     }
                     .table-schedule{
                         .notice-schedule{
-                            font-size: calc(25/1000 * 100vw);
+                            font-size: calc(35/1000 * 100vw);
                             margin-top: calc(30/1000 * 100vw);
+                            word-break: keep-all;
                         }
                     }
      
@@ -579,10 +587,9 @@ body{
 @media (max-width:600px){
 .wolmido-wrapper{
     .wolmido-fun{
-        margin-bottom: calc(-150/1000 * 100vw);
+        
         .fun-bg-top{
-            background-size: calc(1920/1000 * 100vw);
-            height: calc(84/1000 * 100vw);
+        
         }
         .fun-wrap{
             background-image: none;

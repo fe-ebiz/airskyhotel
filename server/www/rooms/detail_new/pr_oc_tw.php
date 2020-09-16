@@ -32,6 +32,14 @@
             </div>
             <div class="box_left">
                 <?php include('./useicon.php'); ?>
+
+                <!--펫배너-->
+                <div class="event-banner-petroom">
+                    <a href="http://hotelairsky.co.kr/reserve/" target="_blink">
+                        <img class="img-petroom-pc" src="http://img.seabay.co.kr/svc/img/event/petroom_pc.jpg" alt="펫배너_pc">
+                        <img class="img-petroom-mobile" src="http://img.seabay.co.kr/svc/img/event/petroom_m.jpg" alt="펫배너_모바일">
+                    </a>
+                </div>
                 <div class="description">
                     <div class="title">
                         <h5>ROOM QUICKVIEW</h5>

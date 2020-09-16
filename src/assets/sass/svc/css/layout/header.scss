@@ -286,6 +286,7 @@ figure>img {
 
                 .menu {
                     font-size: 0;
+                    
 
                     >li {
                         @include dp;
@@ -310,6 +311,7 @@ figure>img {
                                 padding-left: 0;
                             }
                         }
+                       
 
                         .sub {
                             display: none;
@@ -635,6 +637,10 @@ figure>img {
                             .sub {
                                 display: block;
                             }
+                        }
+
+                        &>.title{
+                            pointer-events: none;
                         }
 
                         .sub {

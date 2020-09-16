@@ -64,7 +64,7 @@
                                 </ul>
                             </div>
                         </div> -->
-                        <div class="evt-item">
+                        <!-- <div class="evt-item">
                             <div class="bxBox">
                                 <ul class="bxS fnBxSlider">
                                     <li class="li-1"><img src="http://img.ocean2you.co.kr/renew/event/event_koreatour.jpg" alt="에어스카이호텔 이벤트"></li>
@@ -111,7 +111,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="evt-item">
                             <div class="bxBox">
                                 <ul class="bxS fnBxSlider">
