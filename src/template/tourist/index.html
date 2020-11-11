@@ -1,8 +1,8 @@
 @@include('src/template/include/_head.html')
 
 <link rel="stylesheet" type="text/css" href="/static/svc/css/tourist/init.css">
-<!-- 
-<link rel="stylesheet" type="text/css" href="http://static.hotelairsky.co.kr/svc/css/tourist/init.css"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="http://static.hotelairsky.co.kr/svc/css/tourist/init.css"> -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
@@ -20,6 +20,9 @@
                 <!--메뉴-->
                 <nav class="tourist-sub-menu">
                     <ul class="sub-menu-ul">
+                        <!--상단메뉴 추가-->
+                        <li><a href="?tour_park">영종진공원 안내</a></li>
+                        <!--//상단메뉴 추가-->
                         <li><a href="?tour_fishing">낚시포인트 안내</a></li>
                         <li><a href="?tour_foreshore">갯벌체험 안내</a></li>
                         <li><a href="?tour_nearby">주변관광지 안내</a></li>
@@ -38,6 +41,20 @@
                         <section class="tourist-sec program-sec bottom-menu-sec">
                             <nav class="tourist-bottom-menu">
                                 <ul class="bottom-menu-ul">
+                                    <!--바텀메뉴 추가-->
+                                    <li>
+                                        <a href="?tour_park">
+                                            <div class="title-box">
+                                                <h5>영종진공원 안내</h5>
+                                                <p class="txt-pc">오션뷰와 자연숲, 모두가 즐기는 자연 힐링루트</p>
+                                                <p class="txt-m">오션뷰와 자연 힐링루트</p>
+                                            </div>
+                                            <img class="img-pc" src="http://img.hotelairsky.co.kr/svc/img/tourist/common/img_bottom_menu04.jpg" alt="영종진공원">
+                                            <img class="img-m" src="http://img.hotelairsky.co.kr/svc/img/tourist/common/img_bottom_menu04_m.jpg" alt="영종진공원">
+                                        </a>
+                                    </li>
+                                    <!--///바텀메뉴 추가-->
+                                    
                                     <li>
                                         <a href="?tour_fishing">
                                             <div class="title-box">
@@ -86,13 +103,13 @@
 
     
 
-
-
+    <!--자바스크립트 교체-->
     <script>
-        
         $(document).ready(function(){
-            //url 가져오기
+            //페이지 메뉴 가져오기
             let hrefList = $(".sub-menu-ul li a");
+            //바텀메뉴 가져오기
+            let herfListBottom = $(".bottom-menu-ul li a");
             //url 가져오기
             let url = window.location.href;
             let url_last = url.split('?');
@@ -109,24 +126,37 @@
                     return false;
                 }
             });
-
-            
             
             $.each(pageInfo, function(index, item){
                 if(item.urlName === url_last[1]){ 
                     //상단 문구 변경
                     $(".sub_top_menu .page_title").text(item.title);
                     $(".sub_top_menu .page_sub_title").text(item.subTitle);
-                    //불러오기
-                    $("<div/>").load("./" + url_last[1] + ".html",function(){
-                        $(".tour-contents").prepend($(this).html());
-                    });
+
+                    return false;
                 }
             });
-           
+
+            //불러오기
+            $("<div/>").load("./" + url_last[1] + ".html",function(){
+                $(".tour-contents").prepend($(this).html());
+            });
+
+            //바텀메뉴 하나 숨기기
+            $.each(herfListBottom, function(index, item){
+            if($(item).attr('href') === ("?"+ url_last[1])){
+                    $(item).parent('li').hide();
+                    return false;
+                }
+            });
 
         });
         let pageInfo = [
+            {
+                urlName:"tour_park",
+                title:"영종진공원 안내",
+                subTitle:"호텔에서 도보 1분, 영종진공원은 숲체험장, 태평루, 역사관 등으로 구성된 아름다운 자연숲입니다."
+            },
             {
                 urlName:"tour_fishing",
                 title:"낚시포인트 안내",
@@ -144,8 +174,8 @@
             }
         ];
 
-        
     </script>
+    <!--//자바스크립트 교체-->
 
     @@include('src/template/include/_footer.html')
 </body>

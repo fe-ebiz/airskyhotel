@@ -268,7 +268,7 @@ figure>img {
             }
 
             .logo-box {
-                width: 370px;
+                // width: 370px;
                 padding-left: 10px;
 
                 >h1 {
@@ -283,7 +283,7 @@ figure>img {
 
             .nav {
                 padding-right: 142px;
-
+                .nav-box{ text-align: center;}
                 .menu {
                     font-size: 0;
                     
@@ -396,15 +396,17 @@ figure>img {
             .logo-box {
                 width: auto;
                 .logo {
-                    width: 180px;
+                    width: 140px;
                 }
             }
 
             .nav {
+                // .nav-box{ text-align: center;}
                 .menu {
                     >li {
                         >a {
                             line-height: 95px;
+                            padding: 0 10px;
                         }
 
                         .sub {
@@ -435,11 +437,13 @@ figure>img {
             }
 
             .nav {
-                padding-right: 130px;
-
+                padding-right: 110px;
+                
+                // .nav-box{ text-align: center;}
+                
                 .menu {
                     >li {
-                        font-size: 17px;
+                        font-size: 15px;
 
                         >a {
                             padding: 0 8px;
@@ -450,8 +454,8 @@ figure>img {
 
                             >li {
                                 >a {
-                                    width: 140px;
-                                    font-size: 12.5px;
+                                    // width: 140px;
+                                    font-size: 13px;
                                     line-height: 35px;
                                 }
                             }
@@ -640,6 +644,10 @@ figure>img {
                         }
 
                         &>.title{
+                            // pointer-events: none;
+                        }
+
+                        .none-touch{
                             pointer-events: none;
                         }
 
@@ -730,9 +738,11 @@ figure>img {
     .header {
         .gnb {
             .nav{
+                
                 .menu{
+                    
                     &>li{
-                        font-size: 14.5px;
+                        font-size: 13px;
                         &>a {
                             padding: 0 5px;
                         }

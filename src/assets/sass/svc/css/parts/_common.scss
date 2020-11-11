@@ -35,6 +35,12 @@
     background: $bk-menu-color !important;
 }
 
+@media(max-width:1360px){
+    .bk-menu {
+        width: 110px !important;
+    }
+}
+
 .bk-menu .bk-list li {
     border-top-color: #fff !important;
 }

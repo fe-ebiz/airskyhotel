@@ -1,17 +1,13 @@
 @@include('src/template/include/_head.html')
 
-<link rel="stylesheet" type="text/css" href="http://static.hotelairsky.co.kr/svc/css/jquery.bxslider.css">
-<!-- <link rel="stylesheet" type="text/css" href="/static/svc/css/jquery.bxslider.css" /> -->
+<link rel="stylesheet" type="text/css" href="/static/svc/css/jquery.bxslider.css" />
 
 <!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
 <!--<script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>-->
 <script src="http://www.youtube.com/player_api"></script>
 <!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init.js"></script>
 <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_vid.js"></script> -->
-
-<script type="text/javascript" src="http://static.hotelairsky.co.kr/svc/js/init.js"></script>
-<!-- <script type="text/javascript" src="/static/svc/js/init.js"></script> -->
-
+<script type="text/javascript" src="/static/svc/js/init.js"></script>
 <!-- <script type="text/javascript" src="/static/svc/js/init_vid.js"></script> -->
 <!--<script type="text/javascript" src="/static/svc/js/init_test.js"></script>-->
 <!-- <script type="text/javascript" src="/static/svc/js/init_player.js"></script> -->
@@ -398,9 +394,9 @@
         </section>
     </div>
 
-    <!--위메프 팝업(10/30 18:00 ~ 11/3 18:00까지) -->
-    @@include('src/template/include/popup/_pop_event.html')
-    <!--//위메프 팝업 -->
+    <!-- 팝업 -->
+    <!-- @@include('src/template/include/popup/_pop_event.html') -->
+    <!-- @@include('src/template/include/popup/_event.html') -->
 
     @@include('src/template/include/_footer.html')
 
@@ -419,7 +415,10 @@
             });
         });
     </script>
-    
+    <!-- 팝업 -->
+    @@include('src/template/include/popup/_pop_event.html')
+
+
 </body>
 
 </html>

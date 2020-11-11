@@ -6572,7 +6572,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 .room_detail .slider_container.room,
 .room_detail .slider_container.room .slides {
     width: 1922px;
-    height: 600px
+    height: 594px
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
@@ -6730,6 +6730,14 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     position: relative;
     top: -5px;
     width: 35px;
+}
+
+@media (max-width: 600px) {
+    .room_detail .detail .box_left .amenitys .amenity_box img {
+        position: relative;
+        top: -5px;
+        width: 30px;
+    }
 }
 
 .room_detail .detail .box_left .amenitys .amenity_box i {
@@ -7596,6 +7604,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 
+
 /*팝업*/
 .popup-event{
     /*주석처리 대신css로 안보이게*/
@@ -7621,11 +7630,14 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         top: 2%;
         right: 2%;
         .btn-pop-close{
+            color: #ddd;
             font-size: 22px;
             font-weight: 900;
             border: none;
             background-color: rgba(0, 0, 0, 0.0);
             outline: none;
+            cursor: pointer;
+            transform: scaleX(1.3)
         }
     }
 }
@@ -7652,6 +7664,69 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     }
     
 }
+
+
+
+/*팝업02*/
+.popup-event02{
+    /*주석처리 대신css로 안보이게*/
+    display:block;
+    z-index: 100000;
+    position: absolute;
+    top:320px;
+    right: 160px;
+    width: 460px;
+    img{
+        width: 100%;
+    }
+    .popup-box{
+        a{
+            display: block;
+        }
+        .pop-url-mobile{
+            display: none;
+        }
+    }
+    .btn-pop-close-box{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        .btn-pop-close{
+            color: #ddd;
+            font-size: 22px;
+            font-weight: 900;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.0);
+            outline: none;
+            cursor: pointer;
+            transform: scaleX(1.3)
+        }
+    }
+}
+@media (max-width:767px) {
+    .popup-event02{
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+        .popup-box{
+            .pop-url-mobile{
+                display: block;
+            }
+            .pop-url-pc{
+                display: none;
+            }
+        }
+        .btn-pop-close-box{
+            .btn-pop-close{
+                font-size: 3.8vw;
+            }
+        }
+    }
+    
+}
+
 
 /*펫룸배너*/
 .event-banner-petroom{

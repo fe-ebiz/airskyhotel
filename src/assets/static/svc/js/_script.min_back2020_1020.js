@@ -159,8 +159,7 @@ $(document).ready(function () {
                 $Class: $JssorArrowNavigator$
             }
         }
-        // op['$Align'] = !detectmob() ? 200 : 0;
-        op['$Align'] = !detectmob() ? 380 : 0;
+        op['$Align'] = !detectmob() ? 200 : 0;
         var jssor_main = new $JssorSlider$('slider_room', op);
         var ScaleSlider2 = function () {
             jssor_main.$ScaleWidth(Math.min($(window).width(), 1922));

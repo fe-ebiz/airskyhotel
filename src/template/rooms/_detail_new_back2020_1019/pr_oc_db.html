@@ -8,22 +8,23 @@
     <div class="sub room_detail">
         <div id="slider_room" class="slider_container room">
             <div data-u="slides" class="slides">
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/sp1.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/sp2.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/sp3.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/sp4.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/sp5.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/bath1.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/bath2.jpg" alt="02" /></div>
-                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/_new2/bath3.jpg" alt="02" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/pr_oc_db/001.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/pr_oc_db/002.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/pr_oc_db/003.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_01.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_03.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_04.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_05.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_06.jpg" alt="객실사진" /></div>
+                <div data-p="112.50"><img data-u="image" class="room-visibility" src="http://img.hotelairsky.co.kr/svc/img/rooms/comm_07.jpg" alt="객실사진" /></div>
             </div>
             <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 290px; left: 20px;"></span>
             <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 290px; right: 20px"></span>
         </div>
 
         @@include('src/template/include/rooms/_sub_top.html', {
-        "title": "슈페리어",
-        "sub_title": "모던한 원목 질감의 바닥과 온화한 감성으로 장식된 객실은 안락한 침대와 가구를 갖추고 있습니다.<br>여행의 가치를 추구하는 고객님께 적합한 더블타입 베드를 제공합니다."
+        "title": "프리미어 오션 더블",
+        "sub_title": "특별한 하루를 만들어줄 객실은 천장부터 바닥 까지 탁월한 인테러리어 조화로 구성되어 있습니다.<br>연인, 친구, 가족 2인 여행객들에게 적합한 더블타입 베드를 제공합니다."
         })
 
         <div class="container">
@@ -39,7 +40,7 @@
                             <input type="text" name="checkOut" class="datepicker_ot" value="2019-06-19" placeholder="Check out" readonly />
                             <i class="icon-12 label"></i>
                         </div>
-                        <!-- <div class="s_input">
+                        <div class="s_input">
                             <input type="number" class="set_period_date" value="1" min="1" onKeyup="number_check(this)" />
                             <p class="ad_form_label">박</p>
                         </div>
@@ -48,7 +49,7 @@
                             <p class="ad_form_label">객실</p>
                             <input type="hidden" name="adults" value="1" />
                             <input type="hidden" name="children" value="" />
-                        </div> -->
+                        </div>
                         <div class="s_input">
                             <button type="button" class="s_btn_gray b_100" onclick="on_submit()"><i class="icon-113"></i> SEARCH</button>
                         </div>
@@ -57,6 +58,12 @@
                 <div class="box_left">
                     <!-- <button class="amenity_more tooltip" onclick="amenity_more()" title="더보기"><span>+</span></button> -->
                     @@include('src/template/include/rooms/_amenitys.html')
+                    <div class="event-banner-petroom">
+                        <a href="http://hotelairsky.co.kr/reserve/" target="_blink">
+                            <img class="img-petroom-pc" src="http://img.seabay.co.kr/svc/img/event/petroom_pc.jpg" alt="펫배너_pc">
+                            <img class="img-petroom-mobile" src="http://img.seabay.co.kr/svc/img/event/petroom_m.jpg" alt="펫배너_모바일">
+                        </a>
+                    </div>
                     <div class="description">
                         <div class="title">
                             <h5>ROOM QUICKVIEW</h5>
@@ -65,7 +72,7 @@
                             <ul class="c_list">
                                 <li>객실 크기 : 22.8㎡ (6.9평)</li>
                                 <li>침대 타입 : 더블</li>
-                                <li>객실당 인원 : 기준 인원 1인, 최대 인원 1인</li>
+                                <li>객실당 인원 : 기준 인원 2인, 최대 인원 2인</li>
                             </ul>
                         </div>
                     </div>
